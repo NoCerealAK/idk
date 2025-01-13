@@ -1,0 +1,91 @@
+<Module>
+<ModulePrefs title="Moto X3M 3"/>
+<Content type="html">
+<![CDATA[ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/assets/css/app.css" type="text/css" />
+  <title>Moto X3M 3</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #252525;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #start-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    #start-screen h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    #start-screen p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    #start-button {
+      background-color: #3cc47c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+    #start-button:hover {
+      transform: scale(1.1);
+    }
+    #start-button:active {
+      transform: scale(0.9);
+    }
+    #game-content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Moto X3M 3 | Avocado Arcade</h1>
+    <button id="start-button">Play</button>
+    <p>by Charming Cactus Digital</p>
+  </div>
+  <div id="game-content">
+    <div id="content"></div>
+    <div id="orientation"></div>
+    <div id="loader">Loading ...</div>
+    <script type="text/javascript" src="https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/assets/box2dweb/nape.min.js"></script>
+    <script type="text/javascript" src="https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/assets/box2dweb/nape-debug-draw.min.js"></script>
+    <script type="text/javascript" src="https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/assets/box2dweb/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/assets/box2dweb/easeljs-0.8.2.combined.js"></script>
+    <script type="text/javascript" src="https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/assets/box2dweb/bluebird.min.js"></script>
+    <script type="text/javascript" src="https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/motox3m3.min.js"></script>
+    <script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
+  </div>
+  <script>
+    const startButton = document.getElementById('start-button');
+    const startScreen = document.getElementById('start-screen');
+    const gameContent = document.getElementById('game-content');
+
+    startButton.addEventListener('click', () => {
+      startScreen.style.display = 'none';
+      gameContent.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
+]]>
+</Content>
+</Module>
