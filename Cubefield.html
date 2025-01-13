@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <title>Cubefield</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        #game-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #credit-text {
+            font-size: 1rem;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #play-button {
+            background-color: #3cc47c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #play-button:hover {
+            transform: scale(1.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay">
+        <div id="game-title">Cubefield | Avocado Arcade</div>
+        <button id="play-button">Play</button>
+        <div id="credit-text">by Charming Cactus Digital</div>
+    </div>
+    <iframe id="game-frame" src="https://christopher-hayes.github.io/cubefield/"></iframe>
+
+    <script>
+        const playButton = document.getElementById("play-button");
+        const overlay = document.getElementById("overlay");
+        const gameFrame = document.getElementById("game-frame");
+
+        playButton.addEventListener("click", () => {
+            overlay.style.display = "none";
+            gameFrame.style.display = "block";
+        });
+    </script>
+</body>
+</html>
